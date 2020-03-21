@@ -1,0 +1,17 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Kontum Details</h3>
+
+  <div class="float-right">
+    <%= linkTo(kontaPath(), {class: "btn btn-info"}) { %>
+      Back to all Konta
+    <% } %>
+    <%= linkTo(editKontumPath({ kontum_id: kontum.ID }), {class: "btn btn-warning", body: "Edit"}) %>
+    <%= linkTo(kontumPath({ kontum_id: kontum.ID }), {class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy"}) %>
+  </div>
+</div>
+
+
+
+<ul class="list-group mb-2 ">
+
+</ul>

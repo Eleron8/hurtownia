@@ -1,0 +1,6 @@
+- id: "kontum.created.success"
+  translation: "Kontum was successfully created."
+- id: "kontum.updated.success"
+  translation: "Kontum was successfully updated."
+- id: "kontum.destroyed.success"
+  translation: "Kontum was successfully destroyed."

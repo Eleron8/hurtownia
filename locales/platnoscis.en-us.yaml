@@ -1,0 +1,6 @@
+- id: "platnosci.created.success"
+  translation: "Platnosci was successfully created."
+- id: "platnosci.updated.success"
+  translation: "Platnosci was successfully updated."
+- id: "platnosci.destroyed.success"
+  translation: "Platnosci was successfully destroyed."

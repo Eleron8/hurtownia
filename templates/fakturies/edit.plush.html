@@ -1,0 +1,8 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Edit Faktury</h3>
+</div>
+
+<%= formFor(faktury, {action: fakturyPath({ faktury_id: faktury.ID }), method: "PUT"}) { %>
+  <%= partial("fakturies/form.html") %>
+  <%= linkTo(fakturyPath({ faktury_id: faktury.ID }), {class: "btn btn-warning", "data-confirm": "Are you sure?", body: "Cancel"}) %>
+<% } %>

@@ -1,0 +1,6 @@
+- id: "dostawcy.created.success"
+  translation: "Dostawcy was successfully created."
+- id: "dostawcy.updated.success"
+  translation: "Dostawcy was successfully updated."
+- id: "dostawcy.destroyed.success"
+  translation: "Dostawcy was successfully destroyed."

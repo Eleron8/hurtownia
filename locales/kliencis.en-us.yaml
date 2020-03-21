@@ -1,0 +1,6 @@
+- id: "klienci.created.success"
+  translation: "Klienci was successfully created."
+- id: "klienci.updated.success"
+  translation: "Klienci was successfully updated."
+- id: "klienci.destroyed.success"
+  translation: "Klienci was successfully destroyed."

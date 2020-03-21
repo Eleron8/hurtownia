@@ -60,6 +60,16 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		app.Resource("/kategories", KategoriesResource{})
+		app.Resource("/konta", KontaResource{})
+		app.Resource("/kliencis", KliencisResource{})
+		app.Resource("/sprzedawcies", SprzedawciesResource{})
+		app.Resource("/platnoscis", PlatnoscisResource{})
+		app.Resource("/zamowienia", ZamowieniaResource{})
+		app.Resource("/fakturies", FakturiesResource{})
+		app.Resource("/produkties", ProduktiesResource{})
+		app.Resource("/pozycjes", PozycjesResource{})
+		app.Resource("/dostawcies", DostawciesResource{})
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
 

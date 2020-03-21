@@ -1,0 +1,6 @@
+- id: "pozycje.created.success"
+  translation: "Pozycje was successfully created."
+- id: "pozycje.updated.success"
+  translation: "Pozycje was successfully updated."
+- id: "pozycje.destroyed.success"
+  translation: "Pozycje was successfully destroyed."

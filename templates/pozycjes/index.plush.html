@@ -1,0 +1,33 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Pozycjes</h3>
+  <div class="float-right">
+    <%= linkTo(newPozycjesPath(), {class: "btn btn-primary"}) { %>
+      Create New Pozycje
+    <% } %>
+  </div>
+</div>
+
+<table class="table table-hover table-bordered">
+  <thead class="thead-light">
+    
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (pozycje) in pozycjes { %>
+      <tr>
+        
+        <td>
+          <div class="float-right">
+            <%= linkTo(pozycjePath({ pozycje_id: pozycje.ID }), {class: "btn btn-info", body: "View"}) %>
+            <%= linkTo(editPozycjePath({ pozycje_id: pozycje.ID }), {class: "btn btn-warning", body: "Edit"}) %>
+            <%= linkTo(pozycjePath({ pozycje_id: pozycje.ID }), {class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy"}) %>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

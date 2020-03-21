@@ -1,0 +1,17 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Zamowienium Details</h3>
+
+  <div class="float-right">
+    <%= linkTo(zamowieniaPath(), {class: "btn btn-info"}) { %>
+      Back to all Zamowienia
+    <% } %>
+    <%= linkTo(editZamowieniumPath({ zamowienium_id: zamowienium.ID }), {class: "btn btn-warning", body: "Edit"}) %>
+    <%= linkTo(zamowieniumPath({ zamowienium_id: zamowienium.ID }), {class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy"}) %>
+  </div>
+</div>
+
+
+
+<ul class="list-group mb-2 ">
+
+</ul>

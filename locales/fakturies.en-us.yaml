@@ -1,0 +1,6 @@
+- id: "faktury.created.success"
+  translation: "Faktury was successfully created."
+- id: "faktury.updated.success"
+  translation: "Faktury was successfully updated."
+- id: "faktury.destroyed.success"
+  translation: "Faktury was successfully destroyed."

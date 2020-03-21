@@ -1,0 +1,4 @@
+create_table("sprzedawcies") {
+	t.Column("id", "uuid", {primary: true})
+	t.Timestamps()
+}

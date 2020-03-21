@@ -1,0 +1,8 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Edit Pozycje</h3>
+</div>
+
+<%= formFor(pozycje, {action: pozycjePath({ pozycje_id: pozycje.ID }), method: "PUT"}) { %>
+  <%= partial("pozycjes/form.html") %>
+  <%= linkTo(pozycjePath({ pozycje_id: pozycje.ID }), {class: "btn btn-warning", "data-confirm": "Are you sure?", body: "Cancel"}) %>
+<% } %>

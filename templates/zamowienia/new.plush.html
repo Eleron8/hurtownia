@@ -1,0 +1,8 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">New Zamowienium</h3>
+</div>
+
+<%= formFor(zamowienium, {action: zamowieniaPath(), method: "POST"}) { %>
+  <%= partial("zamowienia/form.html") %>
+  <%= linkTo(zamowieniaPath(), {class: "btn btn-warning", "data-confirm": "Are you sure?", body: "Cancel"}) %>
+<% } %>

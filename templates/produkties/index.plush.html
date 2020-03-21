@@ -1,0 +1,33 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Produkties</h3>
+  <div class="float-right">
+    <%= linkTo(newProduktiesPath(), {class: "btn btn-primary"}) { %>
+      Create New Produkty
+    <% } %>
+  </div>
+</div>
+
+<table class="table table-hover table-bordered">
+  <thead class="thead-light">
+    
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (produkty) in produkties { %>
+      <tr>
+        
+        <td>
+          <div class="float-right">
+            <%= linkTo(produktyPath({ produkty_id: produkty.ID }), {class: "btn btn-info", body: "View"}) %>
+            <%= linkTo(editProduktyPath({ produkty_id: produkty.ID }), {class: "btn btn-warning", body: "Edit"}) %>
+            <%= linkTo(produktyPath({ produkty_id: produkty.ID }), {class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy"}) %>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

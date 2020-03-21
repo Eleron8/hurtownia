@@ -1,0 +1,6 @@
+- id: "kategorie.created.success"
+  translation: "Kategorie was successfully created."
+- id: "kategorie.updated.success"
+  translation: "Kategorie was successfully updated."
+- id: "kategorie.destroyed.success"
+  translation: "Kategorie was successfully destroyed."

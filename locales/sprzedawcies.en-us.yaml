@@ -1,0 +1,6 @@
+- id: "sprzedawcy.created.success"
+  translation: "Sprzedawcy was successfully created."
+- id: "sprzedawcy.updated.success"
+  translation: "Sprzedawcy was successfully updated."
+- id: "sprzedawcy.destroyed.success"
+  translation: "Sprzedawcy was successfully destroyed."

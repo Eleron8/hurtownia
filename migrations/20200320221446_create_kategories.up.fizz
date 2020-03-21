@@ -1,0 +1,4 @@
+create_table("kategories") {
+	t.Column("id", "uuid", {primary: true})
+	t.Timestamps()
+}

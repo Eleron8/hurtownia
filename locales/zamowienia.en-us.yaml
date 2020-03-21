@@ -1,0 +1,6 @@
+- id: "zamowienium.created.success"
+  translation: "Zamowienium was successfully created."
+- id: "zamowienium.updated.success"
+  translation: "Zamowienium was successfully updated."
+- id: "zamowienium.destroyed.success"
+  translation: "Zamowienium was successfully destroyed."
